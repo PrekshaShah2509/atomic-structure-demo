@@ -1,0 +1,116 @@
+/* Author: Preksha Shah */
+/* Custom base styles for Atomic Design Demo */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  background: #f7f9fb;
+  color: #222;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem 0 1.5rem 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 90%;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+}
+
+.section {
+  margin: 2rem 0;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
+  background: #f1f5f9;
+  border: 1px solid #e5e7eb;
+}
+.section-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 0.7rem;
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .section {
+    padding: 1rem 0.3rem;
+  }
+}
+
+/* Button styles */
+.btn {
+  padding: 0.5rem 1.2rem;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover, .btn:focus {
+  background: #1d4ed8;
+}
+
+/* Input styles */
+.input {
+  padding: 0.5rem 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.input:focus {
+  border-color: #2563eb;
+}
+
+/* Header styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f1f5f9;
+  border-radius: 12px 12px 0 0;
+}
+.header-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+/* InputGroup styles */
+.input-group {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+/* Responsive text */
+p {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0 0;
+  text-align: center;
+  color: #555;
+}
